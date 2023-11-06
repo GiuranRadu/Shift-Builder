@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main-page.css">
+  <title>Main Page</title>
+</head>
+<body>
+
+<!-- Header Section -->
+  <header class="header">    
+    <div class="div1"><img class="logo" src="images/logo3.webp" ></div>    
+    <div class="div2"><p>Add shift</p></div>
+    <div class="div3"><p>Salaries </p></div>
+    <div class="div4"><p>Edit profile</p></div>
+    <div class="div5"><p class="hello-user-paragraph">Show username</p></div>
+    <div class="div6">
+      <button class="logout-button">Log Out</button>
+    </div>    
+  </header>
+
+  <div class="logout-confirmation-div hidden " >
+    <p>Are you sure ?</p>
+    <br>
+    <button class="logout-yes-button">YES</button>
+    <button class="logout-no-button">NO</button>      
+  </div>  
+  
+<!-- Register shift Section -->
+  <div class="add-shift-container hidden">
+    <h2 class="h2-register-shift">Register shift</h2>
+    <div>
+      <p>Date of shift  <span>*</span> </p>
+     <input class="js-date-of-shift" type="date" name="date"    >
+    </div>
+
+    <div class="hours-div">
+      <div>
+        <p>Start hour <span>*</span> </p>
+        <input class="js-beggining-time" type="time" name="time">    
+      </div>
+      <img src="images/clock.webp" class="clock-image">
+      <div>
+        <p>End hour  <span>*</span> </p>
+        <input class="js-end-time" type="time" name="time">
+      </div>                 
+    </div>
+
+    <div>
+      <p>Pay / hour  <span>*</span> </p>
+      <input class="js-hour-pay" type="number" name="pay"   >
+    </div>
+
+    <div>
+      <p>Location you worked from  <span>*</span> </p>
+      <select  name="Location" class="select js-location">
+          <option value="select">*Please Select*</option>
+          <option value="location1">Location 1</option>
+          <option value="location2">Location 2</option>
+          <option value="location3">Location 3</option>
+          <option value="location4">Location 4</option>
+          <option value="location5">Location 5</option>    
+      </select>
+    </div>   
+
+    <div>
+      <p>Shift name</p>
+      <input class="js-shift-name" type="text" placeholder="Shift name" >
+    </div>
+
+    <div>
+      <button class="js-shift-button search-button">Register Shift</button>
+    </div>
+  </div>
+
+<!-- Search shift Section -->
+  <div class="search-shift-div hidden">
+    <h2>Search shifts</h2>
+    <div>
+      <p>From date  <span>*</span> </p>
+     <input class="start-date-input" type="date" name="date"    >
+    </div>
+    <div>
+      <p>To date <span>*</span> </p>
+     <input class="end-date-input" type="date" name="date"    >
+    </div>
+    <button class="search-button js-search-by-date">Search by date</button>
+
+    <div>
+      <input class="js-search-shift-name-input" type="text" placeholder="Shift name...">
+    </div>
+    <button class="search-button js-search-by-name">Search by name</button>
+   
+  </div>
+
+<!-- Display shifts Section -->
+<div class="display-shift-div hidden">
+  <table>
+    <tr>
+      <th>Date of Shift</th>
+      <th>Start hour</th>
+      <th>Ending hour</th>
+      <th>Pay/ h</th>
+      <th>Location</th>
+      <th>Shift Name</th>
+      <th>Total money</th>
+      <th>Action</th>
+    </tr>  
+    <tbody class="js-shift-table"></tbody>
+  </table>
+</div>
+
+<!-- Salaries section -->  
+  <div class="your-salaries-div hidden">
+      <h2>Shifts Payments</h2>      
+  </div>
+
+
+<!-- Edit profile section -->
+  <div class="your-profile-div hidden">
+    <div>
+      <p class="username-p">Username: </p>
+      <!-- <input type="text" class="edit-input username-input  hidden"> -->
+      <!-- <button class="edit-button">Edit</button> -->
+    </div>
+    <div>
+      <p class="password-p">Password: </p>
+      <input type="text" class="edit-input password-input hidden">
+      <button class="edit-button">Edit</button>
+    </div>
+    <div>
+      <p class="firstname-p">First name: </p>
+      <input type="text" class="edit-input firstName-input hidden">
+      <button class="edit-button">Edit</button>
+    </div>
+    <div>
+      <p class="lastname-p">Last name: </p>
+      <input type="text" class="edit-input lastName-input hidden">
+      <button class="edit-button">Edit</button>
+    </div>
+    <div>
+      <p class="email-p">Email: </p>
+      <input type="text" class="edit-input email-input hidden">
+      <button class="edit-button">Edit</button>
+    </div>
+    <div>
+      <p class="age-p">Age: </p>
+      <input type="number" class="edit-input age-input hidden">
+      <button class="edit-button">Edit</button>
+    </div>
+    <div>
+      <p class="green-paragraph">Show everything </p>
+      <button class="show-button">SHOW</button>
+      <button class="show-button  apply-button hidden">APPLY</button>
+    </div>
+  </div>
+
+<!-- Error container -->
+  <div class="error-container hidden">
+    <div class="error-div">
+      <div><h1>ERROR ⛔</h1></div>
+      <div class="error-paragraph">HERE YOU TYYPE THE ERROR</div>      
+      <button class="x-button">X</button>
+    </div>    
+  </div>
+
+<!-- OK container -->
+  <div class="ok-container hidden">
+    <div class="ok-div">
+      <div><h1>GOOD ✅</h1></div>
+      <div><p>Changed successfully</p></div>      
+      <button class="x-button-good">X</button>
+    </div>    
+  </div>
+
+  <footer class="footer"> &copy2023 Copyright. Created by Giuran Ionut-Radu</footer>
+
+  <script src="main-page.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(images/posters-abstract-blue-background.jpg);
+  background-size: 100%; 
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+}
+
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color:black;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.header div{
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.header div:hover{
+  transition: 1s;
+  width: 160px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+
+/* .div1, */
+.div4{
+  background-color: rgb(136, 184, 184);
+  border-radius: 10px; 
+}
+
+.div1{
+  border-radius: 10px; 
+}
+
+.div2,
+.div5{
+  background-color:rgb(39, 100, 102);
+  border-radius: 10px;
+}
+
+
+.div3,
+.div6{
+  background-color:cadetblue;
+  border-radius: 10px;
+}
+
+.logo{
+  height: 100%;
+  object-fit:fill;
+  border-radius: 30%;
+}
+
+.add-shift-container,
+.search-shift-div,
+.your-profile-div,
+.your-salaries-div,
+.display-shift-div{ 
+  width: 60%;
+  margin:50px auto ; 
+  padding: 20px 0 ;
+  text-align: center;
+  border: 3px solid black;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 16px rgba(0, 10, 10, 0.5);
+}
+
+.your-salaries-div{
+  text-align: left;
+  padding: 50px;
+}
+
+.search-shift-div{
+  margin: 100px auto;
+}
+
+.display-shift-div {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.display-shift-div table {
+  width: 100%;
+  border: 4px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+}
+
+.display-shift-div  tr {
+  border: 4px solid black;  
+}
+
+
+.display-shift-div  th, 
+.display-shift-div  td {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid #ddd;  
+}
+
+.display-shift-div th {
+  background-color: #727272;  
+}
+
+.display-shift-div td {
+  height: 80px;
+}
+
+input,
+.select{
+  width: 75%;
+  border: 3px solid black;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.edit-input{
+  width: 30%;
+  font-family: inherit;
+}
+
+
+.hours-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(136, 184, 184);
+}
+
+.hours-div div{
+  width: 50%;
+}
+
+.hours-div input{
+  width: 60%
+}
+
+.clock-image{
+ height: 80px;
+}
+
+.search-button{
+  background-color: rgb(39, 100, 102);
+  border: none;
+  padding: 12px 25px;
+  color:white;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-family: inherit;
+}
+
+.your-profile-div div{
+  display: flex;
+  justify-content: space-between;
+  margin:10px 40px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.your-profile-div p{
+  width: 250px;
+  text-align: left;
+}
+
+.edit-button{
+  background-color: rgb(39, 100, 102);
+  color:white;
+  border: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+.show-button{
+  background-color:green;
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.green-paragraph{
+  color:green;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.green-background{
+  background-color: green;  
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin:0 auto 25px;;
+}
+
+.checkmark-img{
+  height: 20px;
+}
+
+.div6 button{
+  background-color: rgb(136, 62, 62);
+  color:white;
+  border: none;
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;  
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+.logout-confirmation-div{
+  position: fixed;
+  width: 160px;
+  height: 130px;
+  background-color: black;  
+  right: 20px;
+  top: 70px;
+  border-radius: 16px;
+  padding: 28px 27px;
+  color:white;  
+}
+
+.logout-confirmation-div button{ 
+  color:white;
+  border: none;
+  width: 45px;
+  height: 25px;
+  border-radius: 8px;  
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-yes-button{
+  background-color: rgb(136, 62, 62);
+  font-family: inherit;
+}
+
+.logout-no-button{
+  background-color: rgb(39, 100, 102);
+  font-family: inherit;
+}
+
+
+.error-div{  
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  background-color: pink;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid red;
+  box-shadow: 5px 10px 16px rgba(0, 10, 10, 0.8);
+}
+.error-paragraph{
+  max-width: 50%;
+}
+
+.ok-div{
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  background-color: rgb(192, 255, 211);
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(68, 174, 38);
+  box-shadow: 5px 10px 16px rgba(0, 10, 10, 0.8);
+}
+
+.x-button{
+  position: fixed;
+  top:-16px;
+  right:-16px;  
+  background-color:rgb(136, 62, 62) ;
+  color:white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.x-button-good{
+  position: fixed;
+  top:-16px;
+  right:-16px; 
+  background-color:rgb(43, 110, 43) ;
+  color:white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+
+.hidden{
+  display:none;  
+}
+
+.footer{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom:0;
+  background-color:rgb(39, 100, 102);
+  height: 40px;  
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-shift-button,
+.remove-shift-button{
+  background-color: rgb(39, 100, 102);
+  color:white;
+  font-family: inherit;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  font-size: 10px;
+}
+
+.best-payed-shift{
+  color:green;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.best-payed-shift-span{
+  color:red;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.bold-span{
+  font-weight: bold;
+}
+
+@media (max-width: 800px){
+  body{
+    font-size: 70%;
+  
+  }
+
+  .header{
+    height: 40px;
+  }
+
+  .header div{
+    font-size:100%;
+    width: 120px;
+  }
+
+  .header div:hover{
+    width: 130px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px){
+  *{
+    font-size: 90%;
+  }
+
+  .add-shift-container,
+.search-shift-div,
+.your-profile-div,
+.your-salaries-div,
+.display-shift-div{
+  width: 80%;
+}
+
+.search-button{
+  width: 100px;
+  font-size:80%;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.js-search-by-date,
+.js-search-by-name{
+  width: 110px;
+  font-size:60%;
+  padding: 7px 12px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.best-payed-shift{
+  font-size: 15px;
+}
+
+.best-payed-shift-span{
+  font-size: 16px;
+}
+
+.green-paragraph{
+  font-size: 16px;
+}
+
+.show-button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 80%;
+}
+
+.edit-button{
+  width: 60px;
+  height: 25px;
+  font-size: 80%;
+  border-radius: 5px;
+}
+
+.edit-input{
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+
+}
+
+
+}
